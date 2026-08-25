@@ -1,5 +1,5 @@
 /* offline cache — bump CACHE when you upload a new index.html */
-const CACHE = 'ek-v3';
+const CACHE = 'ek-v4';
 const ASSETS = ['./', './index.html', './manifest.webmanifest',
                 './icon-192.png', './icon-512.png', './icon-maskable.png'];
 

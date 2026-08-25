@@ -71,6 +71,8 @@ html[data-theme="dark"] .tabs button[aria-selected="true"]{color:#fff}
 .chip{flex:0 0 auto;font-size:.8rem;text-decoration:none;color:var(--ink-soft);
   border:1px solid var(--line);border-radius:999px;padding:5px 13px;white-space:nowrap}
 .chip:active{background:var(--teal-soft);color:var(--teal-text)}
+.chip.pill{font:inherit;font-size:.8rem;cursor:pointer;background:var(--paper)}
+.chip.pill.act{background:var(--ink);border-color:var(--ink);color:var(--paper);font-weight:600}
 
 main{padding:4px 14px 130px;max-width:820px;margin:0 auto}
 .pane[hidden]{display:none}
@@ -183,6 +185,8 @@ td .en{font-weight:600}
   padding:16px 18px;text-align:center;gap:12px;overflow-y:auto}
 .pv-tag{font-size:.74rem;color:var(--ink-soft);letter-spacing:.02em}
 .pv-prompt{font-size:1.9rem;font-weight:700;line-height:1.5;max-width:22ch}
+.pv-prompt.long{font-size:1.35rem;max-width:26ch}
+.pv-ans.long{font-size:1.12rem;max-width:30ch;line-height:1.6}
 .pv-prompt.en,.pv-ans.en{direction:ltr;font-family:"SF Pro Text",-apple-system,"Segoe UI",Roboto,system-ui,sans-serif;letter-spacing:-.01em}
 .pv-ans{font-size:1.45rem;font-weight:700;color:var(--teal-text);min-height:1.6em;
   visibility:hidden;line-height:1.5}
@@ -190,6 +194,7 @@ td .en{font-weight:600}
 .pv-ans .sub{display:block;font-size:.82rem;font-weight:500;color:var(--amber);margin-top:2px}
 .pv-heard{font-size:.85rem;color:var(--ink-soft);min-height:1.3em}
 .pv-heard b{color:var(--ink)}
+.pv-heard{max-width:30ch}
 .pv-heard.ok{color:var(--teal-text)}
 .pv-heard.no{color:#C24545}
 
@@ -247,7 +252,7 @@ td .en{font-weight:600}
   </div>
 </div>
 
-<nav class="chips" id="chips-w"><a class="chip" href="#w3" data-tab="w">جێناوەکان</a><a class="chip" href="#w4" data-tab="w">کردارە یاریدەدەرەکان</a><a class="chip" href="#w5" data-tab="w">وشەی پرسیار</a><a class="chip" href="#w6" data-tab="w">ئاماژە و بڕ</a><a class="chip" href="#w7" data-tab="w">ئامرازەکان</a><a class="chip" href="#w8" data-tab="w">بەستەرەکان</a><a class="chip" href="#w10" data-tab="w">٤٠ کرداری یەکەم</a><a class="chip" href="#w11" data-tab="w">کردارە ڕۆژانەکان</a><a class="chip" href="#w12" data-tab="w">کردار بۆ کار، پارە و بازرگانی</a><a class="chip" href="#w13" data-tab="w">کردار بۆ تەکنەلۆژیا</a><a class="chip" href="#w14" data-tab="w">کردار بۆ هەست و پەیوەندی</a><a class="chip" href="#w16" data-tab="w">کەس و خێزان</a><a class="chip" href="#w17" data-tab="w">پیشە</a><a class="chip" href="#w18" data-tab="w">لەش و تەندروستی</a><a class="chip" href="#w19" data-tab="w">ماڵ</a><a class="chip" href="#w20" data-tab="w">خواردن و خواردنەوە</a><a class="chip" href="#w21" data-tab="w">کار، پارە و بازرگانی</a><a class="chip" href="#w22" data-tab="w">تەکنەلۆژیا</a><a class="chip" href="#w23" data-tab="w">شار و گەشت</a><a class="chip" href="#w24" data-tab="w">کات</a><a class="chip" href="#w25" data-tab="w">سروشت و کەشوهەوا</a><a class="chip" href="#w26" data-tab="w">وشە گشتییەکان</a><a class="chip" href="#w27" data-tab="w">ڕەنگەکان</a><a class="chip" href="#w29" data-tab="w">بنەڕەتییەکان</a><a class="chip" href="#w30" data-tab="w">دروست/هەڵە و بەراورد</a><a class="chip" href="#w31" data-tab="w">پارە و شت</a><a class="chip" href="#w32" data-tab="w">کەسایەتی و هەست</a><a class="chip" href="#w33" data-tab="w">وەسفی شت</a><a class="chip" href="#w35" data-tab="w">دووبارەبوونەوە</a><a class="chip" href="#w36" data-tab="w">کات</a><a class="chip" href="#w37" data-tab="w">شوێن</a><a class="chip" href="#w38" data-tab="w">بڕ و توندی</a><a class="chip" href="#w39" data-tab="w">دڵنیایی</a><a class="chip" href="#w40" data-tab="w">شێواز</a><a class="chip" href="#w41" data-tab="w">بەستەری قسە</a><a class="chip" href="#w43" data-tab="w">سڵاو و خواحافیزی</a><a class="chip" href="#w44" data-tab="w">ڕێزگرتن</a><a class="chip" href="#w45" data-tab="w">کاتێک تێناگەیت</a><a class="chip" href="#w46" data-tab="w">کاتکڕین</a><a class="chip" href="#w47" data-tab="w">داواکردن</a><a class="chip" href="#w48" data-tab="w">ڕازیبوون و ڕەتکردنەوە</a><a class="chip" href="#w49" data-tab="w">دەربڕینی بۆچوون</a><a class="chip" href="#w50" data-tab="w">قسەی بچووک</a><a class="chip" href="#w51" data-tab="w">کار و ئۆفیس</a><a class="chip" href="#w52" data-tab="w">چێشتخانە و بازاڕ</a><a class="chip" href="#w53" data-tab="w">تەلەفۆن</a><a class="chip" href="#w54" data-tab="w">کێشە و فریاکەوتن</a></nav>
+<nav class="chips" id="chips-w"><button class="chip pill" id="f-left">نەفێربوو</button><a class="chip" href="#w3" data-tab="w">جێناوەکان</a><a class="chip" href="#w4" data-tab="w">کردارە یاریدەدەرەکان</a><a class="chip" href="#w5" data-tab="w">وشەی پرسیار</a><a class="chip" href="#w6" data-tab="w">ئاماژە و بڕ</a><a class="chip" href="#w7" data-tab="w">ئامرازەکان</a><a class="chip" href="#w8" data-tab="w">بەستەرەکان</a><a class="chip" href="#w10" data-tab="w">٤٠ کرداری یەکەم</a><a class="chip" href="#w11" data-tab="w">کردارە ڕۆژانەکان</a><a class="chip" href="#w12" data-tab="w">کردار بۆ کار، پارە و بازرگانی</a><a class="chip" href="#w13" data-tab="w">کردار بۆ تەکنەلۆژیا</a><a class="chip" href="#w14" data-tab="w">کردار بۆ هەست و پەیوەندی</a><a class="chip" href="#w16" data-tab="w">کەس و خێزان</a><a class="chip" href="#w17" data-tab="w">پیشە</a><a class="chip" href="#w18" data-tab="w">لەش و تەندروستی</a><a class="chip" href="#w19" data-tab="w">ماڵ</a><a class="chip" href="#w20" data-tab="w">خواردن و خواردنەوە</a><a class="chip" href="#w21" data-tab="w">کار، پارە و بازرگانی</a><a class="chip" href="#w22" data-tab="w">تەکنەلۆژیا</a><a class="chip" href="#w23" data-tab="w">شار و گەشت</a><a class="chip" href="#w24" data-tab="w">کات</a><a class="chip" href="#w25" data-tab="w">سروشت و کەشوهەوا</a><a class="chip" href="#w26" data-tab="w">وشە گشتییەکان</a><a class="chip" href="#w27" data-tab="w">ڕەنگەکان</a><a class="chip" href="#w29" data-tab="w">بنەڕەتییەکان</a><a class="chip" href="#w30" data-tab="w">دروست/هەڵە و بەراورد</a><a class="chip" href="#w31" data-tab="w">پارە و شت</a><a class="chip" href="#w32" data-tab="w">کەسایەتی و هەست</a><a class="chip" href="#w33" data-tab="w">وەسفی شت</a><a class="chip" href="#w35" data-tab="w">دووبارەبوونەوە</a><a class="chip" href="#w36" data-tab="w">کات</a><a class="chip" href="#w37" data-tab="w">شوێن</a><a class="chip" href="#w38" data-tab="w">بڕ و توندی</a><a class="chip" href="#w39" data-tab="w">دڵنیایی</a><a class="chip" href="#w40" data-tab="w">شێواز</a><a class="chip" href="#w41" data-tab="w">بەستەری قسە</a><a class="chip" href="#w43" data-tab="w">سڵاو و خواحافیزی</a><a class="chip" href="#w44" data-tab="w">ڕێزگرتن</a><a class="chip" href="#w45" data-tab="w">کاتێک تێناگەیت</a><a class="chip" href="#w46" data-tab="w">کاتکڕین</a><a class="chip" href="#w47" data-tab="w">داواکردن</a><a class="chip" href="#w48" data-tab="w">ڕازیبوون و ڕەتکردنەوە</a><a class="chip" href="#w49" data-tab="w">دەربڕینی بۆچوون</a><a class="chip" href="#w50" data-tab="w">قسەی بچووک</a><a class="chip" href="#w51" data-tab="w">کار و ئۆفیس</a><a class="chip" href="#w52" data-tab="w">چێشتخانە و بازاڕ</a><a class="chip" href="#w53" data-tab="w">تەلەفۆن</a><a class="chip" href="#w54" data-tab="w">کێشە و فریاکەوتن</a></nav>
 <nav class="chips hidden" id="chips-g"><a class="chip" href="#g3" data-tab="g">کێشەکەی تۆ چییە بەڕاستی</a><a class="chip" href="#g4" data-tab="g">گرنگترین جیاوازی نێوان کوردی و ئینگلیزی</a><a class="chip" href="#g6" data-tab="g">١٢ قاڵبی ڕستە</a><a class="chip" href="#g19" data-tab="g">کاتەکان</a><a class="chip" href="#g25" data-tab="g">پرسیار و نەرێنی</a><a class="chip" href="#g28" data-tab="g">چۆن دەست بە قسەکردن بکەیت</a><a class="chip" href="#g35" data-tab="g">تەلەفوز: ئەو دەنگانەی لە کوردیدا نین</a><a class="chip" href="#g36" data-tab="g">١٠ هەڵەی هەرەباوی قسەکەرانی کوردی</a><a class="chip" href="#g37" data-tab="g">پلانی ٩٠ ڕۆژ</a><a class="chip" href="#g41" data-tab="g">سێ شتی گرنگ</a></nav>
 
 <main>
@@ -1932,11 +1937,11 @@ I go to work every day at eight.</pre>
   </button>
   <button id="d-practice">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"/></svg>
-    <span>ڕاهێنان<i class="due" id="duec"></i></span>
+    <span>وشە<i class="due" id="duec"></i></span>
   </button>
-  <button id="d-left">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12a9 9 0 1 1-6.2-8.6"/><path d="M9 11.5 12 15l9-9.5"/></svg>
-    <span>نەفێربوو</span>
+  <button id="d-sent">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 11h11M4 16h7"/><path d="M17 15l2.5 2.5L23 14"/></svg>
+    <span>ڕستە<i class="due" id="duec2"></i></span>
   </button>
   <button id="d-set">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h10M18 6h2M4 12h4M12 12h8M4 18h10M18 18h2"/><circle cx="16" cy="6" r="2"/><circle cx="10" cy="12" r="2"/><circle cx="16" cy="18" r="2"/></svg>
@@ -2031,15 +2036,16 @@ var pw=D.getElementById('p-w'), pg=D.getElementById('p-g');
 var tw=D.getElementById('t-w'), tg=D.getElementById('t-g');
 var cw=D.getElementById('chips-w'), cg=D.getElementById('chips-g');
 var TOTAL=pairs.length;
+var SENT=[{"t": "قاڵبی ١ — من ... دەکەم", "k": "من هەموو ڕۆژێک کار دەکەم", "e": "I work every day."}, {"t": "قاڵبی ١ — من ... دەکەم", "k": "ئەو لە ئۆفیسێکدا کار دەکات", "e": "He works in an office."}, {"t": "قاڵبی ١ — من ... دەکەم", "k": "ئێمە لە سلێمانی دەژین", "e": "We live in Sulaymaniyah."}, {"t": "قاڵبی ١ — من ... دەکەم", "k": "من چام خۆش دەوێت", "e": "I like tea."}, {"t": "قاڵبی ١ — من ... دەکەم", "k": "ئەوان بە ئینگلیزی قسە دەکەن", "e": "They speak English."}, {"t": "قاڵبی ١ — من ... دەکەم", "k": "تۆ زۆر خێرا قسە دەکەیت", "e": "You speak very fast."}, {"t": "قاڵبی ١ — من ... دەکەم", "k": "ئەو هەموو بەیانییەک ڕادەکات", "e": "She runs every morning."}, {"t": "قاڵبی ٢ — نەرێنی", "k": "نازانم", "e": "I don't know."}, {"t": "قاڵبی ٢ — نەرێنی", "k": "تێناگەم", "e": "I don't understand."}, {"t": "قاڵبی ٢ — نەرێنی", "k": "کاتم نییە", "e": "I don't have time."}, {"t": "قاڵبی ٢ — نەرێنی", "k": "ئەو لێرە کار ناکات", "e": "He doesn't work here."}, {"t": "قاڵبی ٢ — نەرێنی", "k": "ئێمە قاوە ناخۆینەوە", "e": "We don't drink coffee."}, {"t": "قاڵبی ٢ — نەرێنی", "k": "نامەوێت چاوەڕوان بکەم", "e": "I don't want to wait."}, {"t": "قاڵبی ٣ — ئێستا خەریکی ... م", "k": "ئێستا کار دەکەم", "e": "I am working now."}, {"t": "قاڵبی ٣ — ئێستا خەریکی ... م", "k": "چی دەکەیت؟", "e": "What are you doing?"}, {"t": "قاڵبی ٣ — ئێستا خەریکی ... م", "k": "ئەوان تەلەفزیۆن سەیر دەکەن", "e": "They are watching TV."}, {"t": "قاڵبی ٣ — ئێستا خەریکی ... م", "k": "من فێری ئینگلیزی دەبم", "e": "I am learning English."}, {"t": "قاڵبی ٣ — ئێستا خەریکی ... م", "k": "ئەو ئەمڕۆ کار ناکات", "e": "She isn't working today."}, {"t": "قاڵبی ٣ — ئێستا خەریکی ... م", "k": "چاوەڕوانی تۆم", "e": "I am waiting for you."}, {"t": "قاڵبی ٤ — ...م هەیە", "k": "پرسیارێکم هەیە", "e": "I have a question."}, {"t": "قاڵبی ٤ — ...م هەیە", "k": "دوو برام هەیە", "e": "I have two brothers."}, {"t": "قاڵبی ٤ — ...م هەیە", "k": "کێشەیەکم لەگەڵ مۆبایلەکەم هەیە", "e": "I have a problem with my phone."}, {"t": "قاڵبی ٤ — ...م هەیە", "k": "کاتت هەیە؟", "e": "Do you have time?"}, {"t": "قاڵبی ٤ — ...م هەیە", "k": "ئەو ئۆتۆمبێلێکی نوێی هەیە", "e": "He has a new car."}, {"t": "قاڵبی ٤ — ...م هەیە", "k": "پارەم نییە", "e": "I don't have money."}, {"t": "قاڵبی ٥ — ئەمە ...ـە", "k": "ئەمە ماڵەکەمە", "e": "This is my house."}, {"t": "قاڵبی ٥ — ئەمە ...ـە", "k": "زۆر گرانە", "e": "It is very expensive."}, {"t": "قاڵبی ٥ — ئەمە ...ـە", "k": "هێشتا ئامادە نییە", "e": "It's not ready yet."}, {"t": "قاڵبی ٥ — ئەمە ...ـە", "k": "ئەمە هاوڕێکەمە", "e": "This is my friend."}, {"t": "قاڵبی ٥ — ئەمە ...ـە", "k": "ئەمڕۆ گەرمە", "e": "It's hot today."}, {"t": "قاڵبی ٥ — ئەمە ...ـە", "k": "ئاسان نییە", "e": "It's not easy."}, {"t": "قاڵبی ٦ — ... هەیە", "k": "کێشەیەک هەیە", "e": "There is a problem."}, {"t": "قاڵبی ٦ — ... هەیە", "k": "لێرە ئۆتۆمبێلی زۆر هەیە", "e": "There are many cars here."}, {"t": "قاڵبی ٦ — ... هەیە", "k": "هیچ ئاوێک نییە", "e": "There isn't any water."}, {"t": "قاڵبی ٦ — ... هەیە", "k": "لە نزیکەوە چێشتخانەیەک هەیە", "e": "There is a restaurant near here."}, {"t": "قاڵبی ٦ — ... هەیە", "k": "کاتی زۆر نەماوە", "e": "There isn't much time."}, {"t": "قاڵبی ٧ — دەتوانم ...", "k": "دەتوانم یارمەتیت بدەم", "e": "I can help you."}, {"t": "قاڵبی ٧ — دەتوانم ...", "k": "ئەمڕۆ ناتوانم بێم", "e": "I can't come today."}, {"t": "قاڵبی ٧ — دەتوانم ...", "k": "دەتوانیت دووبارەی بکەیتەوە؟", "e": "Can you repeat that?"}, {"t": "قاڵبی ٧ — دەتوانم ...", "k": "دەتوانین دواتر قسە بکەین؟", "e": "Can we talk later?"}, {"t": "قاڵبی ٧ — دەتوانم ...", "k": "ئەو ناتوانێت ئۆتۆمبێل لێبخوڕێت", "e": "He can't drive a car."}, {"t": "قاڵبی ٨ — دەبێت ...", "k": "ئێستا دەبێت بڕۆم", "e": "I have to go now."}, {"t": "قاڵبی ٨ — دەبێت ...", "k": "دەبێت دووبارە هەوڵ بدەیت", "e": "You should try again."}, {"t": "قاڵبی ٨ — دەبێت ...", "k": "دەبێت ئەمڕۆ تەواوی بکەین", "e": "We must finish today."}, {"t": "قاڵبی ٨ — دەبێت ...", "k": "پێویست ناکات چاوەڕوان بکەیت", "e": "You don't have to wait."}, {"t": "قاڵبی ٨ — دەبێت ...", "k": "دەبێت زیاتر ڕاهێنان بکەم", "e": "I should practice more."}, {"t": "قاڵبی ٩ — دەمەوێت ...", "k": "دەمەوێت فێری ئینگلیزی بم", "e": "I want to learn English."}, {"t": "قاڵبی ٩ — دەمەوێت ...", "k": "دەمەوێت ئۆتۆمبێلێک بکڕم", "e": "I want to buy a car."}, {"t": "قاڵبی ٩ — دەمەوێت ...", "k": "دەتەوێت چای بخۆیتەوە؟", "e": "Do you want some tea?"}, {"t": "قاڵبی ٩ — دەمەوێت ...", "k": "ئەو دەیەوێت لێرە کار بکات", "e": "He wants to work here."}, {"t": "قاڵبی ٩ — دەمەوێت ...", "k": "نامەوێت درەنگ بکەوم", "e": "I don't want to be late."}, {"t": "قاڵبی ١٠ — داهاتوو", "k": "سبەینێ پەیوەندیت پێوە دەکەم", "e": "I will call you tomorrow."}, {"t": "قاڵبی ١٠ — داهاتوو", "k": "سەردانی خێزانەکەم دەکەم", "e": "I'm going to visit my family."}, {"t": "قاڵبی ١٠ — داهاتوو", "k": "بەم زووانە ئامادە دەبێت", "e": "It will be ready soon."}, {"t": "قاڵبی ١٠ — داهاتوو", "k": "سبەینێ دەتبینم", "e": "I will see you tomorrow."}, {"t": "قاڵبی ١٠ — داهاتوو", "k": "ئەوان هەفتەی داهاتوو دێن", "e": "They are going to come next week."}, {"t": "قاڵبی ١١ — ڕابردوو", "k": "دوێنێ چوومە ئەوێ", "e": "I went there yesterday."}, {"t": "قاڵبی ١١ — ڕابردوو", "k": "نەمبینی", "e": "I didn't see him."}, {"t": "قاڵبی ١١ — ڕابردوو", "k": "کارەکەت تەواو کرد؟", "e": "Did you finish the work?"}, {"t": "قاڵبی ١١ — ڕابردوو", "k": "هەفتەی ڕابردوو ئۆتۆمبێلێکم کڕی", "e": "I bought a car last week."}, {"t": "قاڵبی ١١ — ڕابردوو", "k": "دوێنێ زۆر کارم کرد", "e": "I worked a lot yesterday."}, {"t": "قاڵبی ١١ — ڕابردوو", "k": "دوێنێ لێرە نەبووم", "e": "I wasn't here yesterday."}, {"t": "قاڵبی ١٢ — پرسیار", "k": "لە کوێ دەژیت؟", "e": "Where do you live?"}, {"t": "قاڵبی ١٢ — پرسیار", "k": "سەرقاڵیت؟", "e": "Are you busy?"}, {"t": "قاڵبی ١٢ — پرسیار", "k": "ناوت چییە؟", "e": "What is your name?"}, {"t": "قاڵبی ١٢ — پرسیار", "k": "نرخی چەندە؟", "e": "How much is it?"}, {"t": "قاڵبی ١٢ — پرسیار", "k": "بۆچی درەنگ کەوتیت؟", "e": "Why are you late?"}, {"t": "قاڵبی ١٢ — پرسیار", "k": "کەی دەگەڕێیتەوە؟", "e": "When are you coming back?"}, {"t": "قاڵبی ١٢ — پرسیار", "k": "چ کارێک دەکەیت؟", "e": "What do you do?"}, {"t": "Present Perfect", "k": "کارەکەم تەواو کردووە", "e": "I have finished the work."}, {"t": "Present Perfect", "k": "تا ئێستا چوویتە دوبەی؟", "e": "Have you ever been to Dubai?"}, {"t": "Present Perfect", "k": "ئەمڕۆ نەمبینیوە", "e": "I haven't seen him today."}, {"t": "Present Perfect", "k": "لێرە کار دەکەم لە ٢٠٢٠ ـەوە", "e": "I have been working here since 2020."}, {"t": "دەستەواژەی ڕۆژانە", "k": "ببوورە، تێنەگەیشتم", "e": "Sorry, I didn't catch that."}, {"t": "دەستەواژەی ڕۆژانە", "k": "دەتوانیت هێواشتر قسە بکەیت؟", "e": "Could you speak slower?"}, {"t": "دەستەواژەی ڕۆژانە", "k": "پەیوەندیت پێوە دەکەمەوە", "e": "I will get back to you."}, {"t": "دەستەواژەی ڕۆژانە", "k": "درەنگ کەوتووم", "e": "I'm running late."}, {"t": "دەستەواژەی ڕۆژانە", "k": "بۆ من باشە", "e": "Sounds good to me."}, {"t": "دەستەواژەی ڕۆژانە", "k": "با کۆبوونەوەیەک دابنێین", "e": "Let's schedule a meeting."}, {"t": "دەستەواژەی ڕۆژانە", "k": "پسوولەکە، تکایە", "e": "The bill, please."}, {"t": "دەستەواژەی ڕۆژانە", "k": "زۆر گرانە", "e": "That's too expensive."}, {"t": "دەستەواژەی ڕۆژانە", "k": "کار ناکات", "e": "It's not working."}, {"t": "دەستەواژەی ڕۆژانە", "k": "نیگەران مەبە", "e": "Don't worry."}];
 var STEPS=[1,2,4,8,16,32];      /* ڕۆژ بۆ هەر ئاستێک */
 function ar(n){return String(n).replace(/[0-9]/g,function(d){return '٠١٢٣٤٥٦٧٨٩'[+d];});}
 function today(){var d=new Date();d.setHours(0,0,0,0);return Math.round(d.getTime()/864e5);}
 
 /* ---------------- storage ---------------- */
-var S={srs:{},theme:'light',fs:17,rate:0.9,newPerDay:15,newDay:0,newCount:0,
+var S={srs:{},sen:{},theme:'light',fs:17,rate:0.9,newPerDay:15,newDay:0,newCount:0,senCount:0,
        streak:0,lastDay:0,dir:'ku2en'};
 try{var raw=localStorage.getItem('ekv3');
-    if(raw){S=Object.assign(S,JSON.parse(raw));}
+    if(raw){S=Object.assign(S,JSON.parse(raw)); if(!S.sen)S.sen={};}
     else{ var old=localStorage.getItem('ekv2');
       if(old){var o=JSON.parse(old);
         S.theme=o.theme||S.theme; S.fs=o.fs||S.fs; S.rate=o.rate||S.rate;
@@ -2096,22 +2102,7 @@ function applyPrefs(){
 applyPrefs();
 
 /* ---------------- progress + streak ---------------- */
-var streakEl=D.getElementById('streak'), dueBadge=D.getElementById('duec');
-function dueList(){
-  var t=today(), due=[];
-  pairs.forEach(function(p){var r=S.srs[p.dataset.i]; if(r && r.d<=t) due.push(p);});
-  return due;
-}
-function newList(limit){
-  var out=[];
-  for(var i=0;i<pairs.length && out.length<limit;i++)
-    if(!S.srs[pairs[i].dataset.i]) out.push(pairs[i]);
-  return out;
-}
-function newQuota(){
-  if(S.newDay!==today()){S.newDay=today();S.newCount=0;save();}
-  return Math.max(0,S.newPerDay-S.newCount);
-}
+var streakEl=D.getElementById('streak'), dueBadge=D.getElementById('duec'), dueBadge2=D.getElementById('duec2');
 function progress(){
   var started=0, mastered=0;
   pairs.forEach(function(p){ if(S.srs[p.dataset.i]){started++; if(known(p))mastered++;} });
@@ -2125,8 +2116,8 @@ function progress(){
     var ms=ps.filter(known).length;
     s.textContent=ar(st)+' دەستپێکراو · '+ar(ms)+' فێربوو · لە '+ar(ps.length);
   });
-  var pending=dueList().length+Math.min(newQuota(),newList(99).length);
-  if(dueBadge){dueBadge.textContent=ar(pending); dueBadge.style.display=pending?'':'none';}
+  if(dueBadge){var pw2=pendingWords();dueBadge.textContent=ar(pw2);dueBadge.style.display=pw2?'':'none';}
+  if(dueBadge2){var ps2=pendingSents();dueBadge2.textContent=ar(ps2);dueBadge2.style.display=ps2?'':'none';}
   if(streakEl) streakEl.textContent = S.streak>0 ? ('🔥 '+ar(S.streak)) : '';
 }
 function touchStreak(){
@@ -2210,7 +2201,7 @@ clear.onclick=function(){q.value='';apply();q.focus()};
 
 /* ---------------- dock ---------------- */
 var dMask=D.getElementById('d-mask'), dMaskL=D.getElementById('d-mask-l');
-var dLeft=D.getElementById('d-left');
+var dLeft=D.getElementById('f-left');
 dMask.onclick=function(){
   mask=maskOrder[(maskOrder.indexOf(mask)+1)%3];
   body.dataset.mask=mask; dMaskL.textContent=maskLabels[mask];
@@ -2232,7 +2223,7 @@ veil.onclick=function(){openSheet(false)};
 D.getElementById('sheet-x').onclick=function(){openSheet(false)};
 D.getElementById('reset').onclick=function(){
   if(!confirm('هەموو پێشکەوتنەکەت بسڕدرێتەوە؟')) return;
-  S.srs={}; S.streak=0; S.lastDay=0; S.newCount=0; save();
+  S.srs={}; S.sen={}; S.streak=0; S.lastDay=0; S.newCount=0; S.senCount=0; save();
   paint(); progress(); apply();
 };
 
@@ -2241,117 +2232,155 @@ var pv=D.getElementById('pv'), pvBar=D.getElementById('pv-bar'), pvCount=D.getEl
 var pvTag=D.getElementById('pv-tag'), pvPrompt=D.getElementById('pv-prompt'), pvAns=D.getElementById('pv-ans');
 var pvHeard=D.getElementById('pv-heard'), pvShow=D.getElementById('pv-show'), pvGrades=D.getElementById('pv-grades');
 var pvMic=D.getElementById('pv-mic'), pvSay=D.getElementById('pv-say'), pvBody=D.getElementById('pv-body');
-var queue=[], cur=null, total=0, done=0, revealed=false;
+var midEl=D.querySelector('.pv-mid');
+var queue=[], cur=null, total=0, done=0, revealed=false, kind='word';
+var SEN_PER_DAY=8;
 
 var SR=window.SpeechRecognition||window.webkitSpeechRecognition;
 if(!SR) pvMic.style.display='none';
-
 function shuffle(a){for(var i=a.length-1;i>0;i--){var j=Math.random()*(i+1)|0;var x=a[i];a[i]=a[j];a[j]=x;}return a;}
 
-function startPractice(){
-  var due=shuffle(dueList());
-  var fresh=newList(newQuota());
-  queue=due.concat(fresh);
+/* --- card builders --- */
+function wordCard(p){
+  var k2e=S.dir==='ku2en';
+  return {store:'srs', id:p.dataset.i,
+    tag: k2e?'بە ئینگلیزی بیڵێ':'واتاکەی چییە؟',
+    prompt: k2e?p.dataset.ku:p.dataset.enfull, promptEn: !k2e,
+    answer: (k2e?p.dataset.enfull:p.dataset.ku), answerEn: k2e,
+    sub: k2e?p.dataset.ex:'', speak:p.dataset.s, mic:k2e, long:false};
+}
+function sentCard(i){
+  var o=SENT[i];
+  return {store:'sen', id:String(i), tag:o.t,
+    prompt:o.k, promptEn:false, answer:o.e, answerEn:true,
+    sub:'', speak:o.e, mic:true, long:true};
+}
+function dueWords(){var t=today(),o=[];pairs.forEach(function(p){var r=S.srs[p.dataset.i];if(r&&r.d<=t)o.push(p);});return o;}
+function newWords(n){var o=[];for(var i=0;i<pairs.length&&o.length<n;i++)if(!S.srs[pairs[i].dataset.i])o.push(pairs[i]);return o;}
+function dueSents(){var t=today(),o=[];for(var i=0;i<SENT.length;i++){var r=S.sen[i];if(r&&r.d<=t)o.push(i);}return o;}
+function newSents(n){var o=[];for(var i=0;i<SENT.length&&o.length<n;i++)if(!S.sen[i])o.push(i);return o;}
+function wordQuota(){if(S.newDay!==today()){S.newDay=today();S.newCount=0;S.senCount=0;save();}return Math.max(0,S.newPerDay-S.newCount);}
+function sentQuota(){wordQuota();return Math.max(0,SEN_PER_DAY-(S.senCount||0));}
+function pendingWords(){return dueWords().length+Math.min(wordQuota(),newWords(99).length);}
+function pendingSents(){return dueSents().length+Math.min(sentQuota(),newSents(99).length);}
+
+function start(k){
+  kind=k;
+  if(k==='word') queue=shuffle(dueWords()).concat(newWords(wordQuota())).map(wordCard);
+  else queue=shuffle(dueSents()).concat(newSents(sentQuota())).map(sentCard);
   total=queue.length; done=0;
-  if(!total){ finish(true); pv.classList.add('on'); return; }
-  pv.classList.add('on'); next();
+  pv.classList.add('on');
+  if(!total){finish(true);return;}
+  next();
 }
 function next(){
   stopMic();
   if(!queue.length){finish(false);return;}
   cur=queue.shift(); revealed=false;
-  pvBody.innerHTML='';                       /* rebuild default body */
-  pvBody.appendChild(pvTag); pvBody.appendChild(pvPrompt);
-  pvBody.appendChild(midEl);
+  pvBody.innerHTML='';
+  pvBody.appendChild(pvTag); pvBody.appendChild(pvPrompt); pvBody.appendChild(midEl);
   pvBody.appendChild(pvHeard); pvBody.appendChild(pvAns);
-  var k2e = S.dir==='ku2en';
-  pvTag.textContent = k2e ? 'بە ئینگلیزی بیڵێ' : 'واتاکەی چییە؟';
-  pvPrompt.textContent = k2e ? cur.dataset.ku : cur.dataset.enfull;
-  pvPrompt.classList.toggle('en',!k2e);
-  pvAns.innerHTML = (k2e ? cur.dataset.enfull : cur.dataset.ku)
-    + (cur.dataset.ex ? '<span class="sub">'+cur.dataset.ex+'</span>' : '');
-  pvAns.classList.remove('on'); pvAns.classList.toggle('en',k2e);
+  pvTag.textContent=cur.tag;
+  pvPrompt.textContent=cur.prompt;
+  pvPrompt.className='pv-prompt'+(cur.promptEn?' en':'')+(cur.long?' long':'');
+  pvAns.innerHTML=cur.answer+(cur.sub?'<span class="sub">'+cur.sub+'</span>':'');
+  pvAns.className='pv-ans'+(cur.answerEn?' en':'')+(cur.long?' long':'');
   pvHeard.textContent=''; pvHeard.className='pv-heard';
   pvShow.classList.remove('hidden'); pvGrades.classList.add('hidden');
-  pvMic.style.display = (SR && k2e) ? '' : 'none';
+  pvMic.style.display=(SR&&cur.mic)?'':'none';
   pvCount.textContent=ar(done)+'/'+ar(total);
   pvBar.style.width=(done/total*100)+'%';
-  if(!k2e) say(cur.dataset.s);
+  if(!cur.answerEn) say(cur.speak);
 }
 function reveal(){
   if(revealed) return;
   revealed=true; pvAns.classList.add('on');
   pvShow.classList.add('hidden'); pvGrades.classList.remove('hidden');
-  if(S.dir==='ku2en') say(cur.dataset.s);
+  if(cur.answerEn) say(cur.speak);
 }
 function grade(g){
-  var id=cur.dataset.i, r=S.srs[id]||{b:0,d:0};
-  if(g===1){ r.b=1; r.d=today(); queue.push(cur); }
-  else if(g===2){ r.b=Math.max(1,r.b); r.d=today()+STEPS[Math.max(0,r.b-1)]; done++; }
-  else { r.b=Math.min(6,r.b+1); r.d=today()+STEPS[r.b-1]; done++; }
-  if(!S.srs[id]){ S.newCount++; }
-  S.srs[id]=r; save(); paint(); progress();
+  var st=cur.store, id=cur.id, fresh=!S[st][id], r=S[st][id]||{b:0,d:0};
+  if(g===1){r.b=1;r.d=today();queue.push(cur);}
+  else if(g===2){r.b=Math.max(1,r.b);r.d=today()+STEPS[Math.max(0,r.b-1)];done++;}
+  else {r.b=Math.min(6,r.b+1);r.d=today()+STEPS[r.b-1];done++;}
+  if(fresh){ if(st==='srs') S.newCount++; else S.senCount=(S.senCount||0)+1; }
+  S[st][id]=r; save(); paint(); progress();
   next();
 }
-function finish(emptyStart){
-  stopMic();
-  touchStreak(); progress();
+function finish(none){
+  stopMic(); touchStreak(); progress();
   pvBar.style.width='100%'; pvCount.textContent=ar(total)+'/'+ar(total);
   pvShow.classList.add('hidden'); pvGrades.classList.add('hidden');
   pvBody.innerHTML='<div class="pv-done"><h3>'+
-    (emptyStart?'ئەمڕۆ هیچت نەماوە':'تەواو بوو')+'</h3><p>'+
-    (emptyStart
-      ? 'هەموو وشە دیاریکراوەکانی ئەمڕۆت کردووە. سبەینێ دووبارەکانت دێنەوە.'
-      : ar(total)+' وشەت ڕاهێنانی لەسەر کرد. زنجیرەکەت: '+ar(S.streak)+' ڕۆژ.')+
+    (none?'ئەمڕۆ هیچت نەماوە':'تەواو بوو')+'</h3><p>'+
+    (none?'هەموو ئەوەی ئەمڕۆت هەبوو تەواوت کردووە. سبەینێ دووبارەکان دێنەوە.'
+        : ar(total)+' کارتت تەواو کرد. زنجیرەکەت: '+ar(S.streak)+' ڕۆژ.')+
     '</p></div>';
 }
 pvShow.onclick=reveal;
-pvGrades.addEventListener('click',function(e){
-  var b=e.target.closest('button[data-g]'); if(b) grade(+b.dataset.g);
-});
-pvSay.onclick=function(){ if(cur) say(cur.dataset.s,null); };
+pvGrades.addEventListener('click',function(e){var b=e.target.closest('button[data-g]');if(b)grade(+b.dataset.g);});
+pvSay.onclick=function(){if(cur)say(cur.speak,null);};
 D.getElementById('pv-x').onclick=function(){stopMic();pv.classList.remove('on');apply();};
-var midEl=D.querySelector('.pv-mid');
+D.getElementById('d-practice').onclick=function(){start('word')};
+D.getElementById('d-sent').onclick=function(){start('sent')};
 
-/* ---- speech in ---- */
+/* --- speech in --- */
 var rec=null;
-function norm(s){return (s||'').toLowerCase().replace(/[^a-z' ]/g,' ').replace(/\s+/g,' ').trim();}
+var SKIP={'a':1,'an':1,'the':1,'to':1,'of':1};
+function norm(s){return (s||'').toLowerCase().replace(/['’]/g,"'").replace(/[^a-z' ]/g,' ').replace(/\s+/g,' ').trim();}
 function lev(a,b){
   var m=a.length,n=b.length,dp=[],i,j;
-  for(i=0;i<=m;i++){dp[i]=[i];}
-  for(j=0;j<=n;j++){dp[0][j]=j;}
+  for(i=0;i<=m;i++)dp[i]=[i];
+  for(j=0;j<=n;j++)dp[0][j]=j;
   for(i=1;i<=m;i++)for(j=1;j<=n;j++)
     dp[i][j]=Math.min(dp[i-1][j]+1,dp[i][j-1]+1,dp[i-1][j-1]+(a[i-1]===b[j-1]?0:1));
   return dp[m][n];
 }
-function matches(heard,target){
-  var h=norm(heard), t=norm(target);
-  if(!h||!t) return false;
-  if(h===t || h.indexOf(t)>-1) return true;
-  var tol = t.length>6?2:(t.length>3?1:0);
-  if(lev(h,t)<=tol) return true;
-  return h.split(' ').some(function(w){return lev(w,t)<=tol;});
+function near(a,b){var tol=b.length>6?2:(b.length>3?1:0);return a===b||lev(a,b)<=tol;}
+function checkWord(heard,target){
+  var h=norm(heard),t=norm(target);
+  if(!h||!t) return {ok:false};
+  if(h===t||h.indexOf(t)>-1) return {ok:true};
+  if(near(h,t)) return {ok:true};
+  return {ok:h.split(' ').some(function(w){return near(w,t);})};
 }
-function stopMic(){ if(rec){try{rec.abort();}catch(e){} rec=null;} pvMic.classList.remove('live'); }
+function checkSent(heard,target){
+  var h=norm(heard).split(' '), t=norm(target).split(' ').filter(function(w){return w&&!SKIP[w];});
+  if(!t.length) return {ok:false,miss:[]};
+  var pool=h.slice(), miss=[], hits=0;
+  t.forEach(function(w){
+    var k=-1;
+    for(var i=0;i<pool.length;i++) if(near(pool[i],w)){k=i;break;}
+    if(k>-1){pool.splice(k,1);hits++;} else miss.push(w);
+  });
+  return {ok:hits/t.length>=0.75, miss:miss};
+}
+function stopMic(){if(rec){try{rec.abort();}catch(e){}rec=null;}pvMic.classList.remove('live');}
 pvMic.onclick=function(){
   if(!SR||!cur) return;
   if(rec){stopMic();return;}
   if(synth) synth.cancel();
-  rec=new SR();
-  rec.lang='en-US'; rec.interimResults=false; rec.maxAlternatives=3;
+  rec=new SR(); rec.lang='en-US'; rec.interimResults=false; rec.maxAlternatives=3;
   pvMic.classList.add('live');
   pvHeard.className='pv-heard'; pvHeard.textContent='گوێم لێیە…';
   rec.onresult=function(ev){
-    var alts=[], i;
+    var alts=[],i;
     for(i=0;i<ev.results[0].length;i++) alts.push(ev.results[0][i].transcript);
-    var hit=alts.some(function(a){return matches(a,cur.dataset.s);});
-    pvHeard.innerHTML=(hit?'✓ ':'✗ ')+'بیستم: <b>'+alts[0]+'</b>';
-    pvHeard.className='pv-heard '+(hit?'ok':'no');
+    var best=null;
+    alts.forEach(function(a){
+      var r = cur.long ? checkSent(a,cur.speak) : checkWord(a,cur.speak);
+      r.text=a;
+      if(!best || (r.ok&&!best.ok) || (r.ok===best.ok && (r.miss||[]).length<(best.miss||[]).length)) best=r;
+    });
+    var msg=(best.ok?'✓ ':'✗ ')+'بیستم: <b dir="ltr">'+best.text+'</b>';
+    if(!best.ok && best.miss && best.miss.length && best.miss.length<=4)
+      msg+='<br><span dir="ltr">'+best.miss.join(' · ')+'</span>';
+    pvHeard.innerHTML=msg;
+    pvHeard.className='pv-heard '+(best.ok?'ok':'no');
     stopMic(); reveal();
   };
   rec.onerror=function(ev){
-    stopMic();
-    pvHeard.className='pv-heard no';
+    stopMic(); pvHeard.className='pv-heard no';
     pvHeard.textContent = ev.error==='not-allowed'
       ? 'ڕێگە بە مایکرۆفۆن بدە لە ڕێکخستنی وێبگەڕەکەت.'
       : 'هیچم نەبیست — دووبارە هەوڵ بدە.';
@@ -2359,8 +2388,6 @@ pvMic.onclick=function(){
   rec.onend=function(){pvMic.classList.remove('live');};
   try{rec.start();}catch(e){stopMic();}
 };
-
-D.getElementById('d-practice').onclick=startPractice;
 
 /* ---------------- misc ---------------- */
 D.querySelectorAll('.chip').forEach(function(a){
